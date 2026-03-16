@@ -47,7 +47,22 @@ text-decoration:none;
 color:#2563eb;
 font-weight:bold;
 }
+.projects-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
 
+.project-card{
+background:white;
+padding:20px;
+border-radius:8px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.project-card h3{
+margin-top:0;
+}
 </style>
 </head>
 
@@ -102,6 +117,61 @@ learning applications in fintech.
 </section>
 
 <section id="projects" class="card">
+
+<h2>Projects</h2>
+
+<div class="projects-grid">
+
+<div class="project-card">
+
+<h3>Fraud Detection ML</h3>
+
+<p>
+Machine learning model for detecting fraudulent financial
+transactions using classification algorithms and feature
+engineering.
+</p>
+
+<a class="project-link"
+href="https://github.com/FaithKirigi/Fraud-detection-ML">
+View Project
+</a>
+
+</div>
+
+
+<div class="project-card">
+
+<h3>Transaction Analytics Dashboard</h3>
+
+<p>
+Financial transaction analysis project exploring
+fraud patterns, transaction trends, and business
+insights using SQL and Power BI.
+</p>
+
+<p><em>Project coming soon</em></p>
+
+</div>
+
+
+<div class="project-card">
+
+<h3>Risk Scoring Model</h3>
+
+<p>
+Prototype model for assigning risk scores to financial
+transactions based on transaction behavior, velocity,
+and anomaly indicators.
+</p>
+
+<p><em>Project coming soon</em></p>
+
+</div>
+
+</div>
+
+</section>
 
 <h2>Projects</h2>
 
