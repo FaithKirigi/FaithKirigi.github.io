@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<!-- Code Background -->
+<!-- Animated Code Background -->
 <div id="code-background"></div>
 
 <!-- Hero Section -->
@@ -21,7 +21,6 @@
 <!-- Projects Section -->
 <section id="projects">
     <h2>Fraud & Risk Analytics Projects</h2>
-
     <div class="projects-container">
 
         <!-- Project 1 -->
@@ -43,35 +42,32 @@
     </div>
 </section>
 
-<!-- JS for animated code background -->
+<!-- JS for animated Python/SQL background -->
 <script>
 const codeLines = [
-`import pandas as pd`,
-`df = pd.read_csv('transactions.csv')`,
-`fraud = df[df['isFraud'] == 1]`,
-`SELECT * FROM transactions WHERE amount > 10000;`,
-`JOIN accounts ON transactions.account_id = accounts.id;`,
-`plt.hist(df['amount'], bins=50)`,
-`from sklearn.ensemble import RandomForestClassifier`,
-`model.fit(X_train, y_train)`,
-`y_pred = model.predict(X_test)`,
-`WHERE transaction_date >= '2026-01-01'`
+    "import pandas as pd",
+    "df = pd.read_csv('transactions.csv')",
+    "fraud = df[df['isFraud'] == 1]",
+    "from sklearn.ensemble import RandomForestClassifier",
+    "model.fit(X_train, y_train)",
+    "y_pred = model.predict(X_test)",
+    "plt.hist(df['amount'], bins=50)",
+    "SELECT * FROM transactions WHERE amount > 10000;",
+    "JOIN accounts ON transactions.account_id = accounts.id;",
+    "WHERE transaction_date >= '2026-01-01';"
 ];
 
 const bg = document.getElementById('code-background');
 
-function randomCodeLine() {
-    return codeLines[Math.floor(Math.random() * codeLines.length)];
-}
-
 function generateBackground() {
     let code = '';
-    for (let i=0; i<100; i++){
-        code += randomCodeLine() + '\n';
+    for (let i = 0; i < 100; i++) {
+        code += codeLines[Math.floor(Math.random() * codeLines.length)] + '\n';
     }
     bg.textContent = code;
 }
 
+// refresh every 2 seconds for subtle motion
 setInterval(generateBackground, 2000);
 generateBackground();
 </script>
