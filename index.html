@@ -275,38 +275,7 @@ linkedin.com/FaithKirigi
 </section>
 
 </div>
-<script>
-const codeLines = [
-`import pandas as pd`,
-`df = pd.read_csv('transactions.csv')`,
-`fraud = df[df['isFraud'] == 1]`,
-`SELECT * FROM transactions WHERE amount > 10000;`,
-`JOIN accounts ON transactions.account_id = accounts.id;`,
-`plt.hist(df['amount'], bins=50)`,
-`from sklearn.ensemble import RandomForestClassifier`,
-`model.fit(X_train, y_train)`,
-`y_pred = model.predict(X_test)`,
-`WHERE transaction_date >= '2026-01-01'`
-];
 
-const bg = document.getElementById('code-background');
-
-function randomCodeLine() {
-    return codeLines[Math.floor(Math.random() * codeLines.length)];
-}
-
-function generateBackground() {
-    let code = '';
-    for (let i=0; i<100; i++){
-        code += randomCodeLine() + '\n';
-    }
-    bg.textContent = code;
-}
-
-// refresh every 2 seconds to create motion
-setInterval(generateBackground, 2000);
-generateBackground();
-</script>
 </body>
 </html>
 
