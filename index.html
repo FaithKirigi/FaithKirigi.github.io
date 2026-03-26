@@ -1,279 +1,114 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Faith Kirigi | Fraud & Risk Analyst</title>
-<link rel="stylesheet" href="style.css">
-<style>
-
-body{
-font-family: Arial;
-margin:0;
-background:#f5f5f5;
+/* Global Styles */
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f9fc;
+    color: #222;
+    overflow-x: hidden;
 }
 
-header{
-background:#1f2937;
-color:white;
-padding:20px;
+/* Code Background */
+#code-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.3em;
+    overflow: hidden;
+    z-index: -1;
+    white-space: pre;
+    opacity: 0.12;
 }
 
-nav a{
-color:white;
-margin-right:20px;
-text-decoration:none;
-font-weight:bold;
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 100px 12%;
 }
 
-.container{
-max-width:1000px;
-margin:auto;
-padding:40px;
+#hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #1f3c88;
 }
 
-.card{
-background:white;
-padding:20px;
-margin-bottom:20px;
-border-radius:8px;
-box-shadow:0 2px 6px rgba(0,0,0,0.1);
+#hero h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
-h1{
-margin:0;
+#hero p {
+    font-size: 16px;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
-.project-link{
-text-decoration:none;
-color:#2563eb;
-font-weight:bold;
-}
-.projects-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+/* Projects Section */
+#projects {
+    padding: 80px 12%;
 }
 
-.project-card{
-background:white;
-padding:20px;
-border-radius:8px;
-box-shadow:0 2px 6px rgba(0,0,0,0.1);
+#projects h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #1f3c88;
 }
 
-.project-card h3{
-margin-top:0;
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
 }
-h2{
-border-bottom:2px solid #e5e7eb;
-padding-bottom:5px;
+
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-</style>
-</head>
 
-<body>
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
 
-<header>
-<h1>Faith Kirigi</h1>
-<p>Fraud & Risk Analyst specializing in financial transaction analysis and fraud detection models</p>
-<p>Special interest: Fraud detection in digital payments, fintech platforms, and high-volume transaction systems.</p>
-<nav>
-<a href="#about">About</a>
-<a href="#projects">Projects</a>
-<a href="#skills">Skills</a>
-<a href="#resume">Resume</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
 
-<div class="container">
+.project-card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
 
-<section id="about" class="card">
-<h2>About</h2>
+.project-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 18px;
+}
 
-<p>
-I analyze financial transaction data to detect fraud patterns and risk indicators.
-My work focuses on Python, SQL, and machine learning models designed for high-volume transaction environments.
-I’m particularly interested in improving fraud detection in digital payments and fintech platforms.
-    
-</p>
+.project-button {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #1f3c88;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: background 0.2s ease;
+}
 
-
-
-</section>
-
-<section id="skills" class="card">
-
-<h2>Skills</h2>
-
-<ul>
-<h3>Fraud & Risk Analytics</h3>
-<ul>
-<li>Transaction analysis</li>
-<li>Anomaly detection</li>
-<li>Risk indicators</li>
-<li>Fraud pattern analysis</li>
-</ul>
-
-<h3>Technical Tools</h3>
-<ul>
-<li>Python (Pandas, NumPy)</li>
-<li>SQL</li>
-<li>Feature engineering</li>
-<li>Classification models</li>
-</ul>
-
-<h3>Visualization & BI</h3>
-<ul>
-<li>Power BI</li>
-<li>Matplotlib</li>
-<li>Seaborn</li>
-</ul>
-
-</section>
-
-<section id="projects" class="card">
-
-<h2>Fraud & Risk Analytics Projects</h2>
-
-<div class="projects-grid">
-
-<div class="project-card">
-
-<h3>Fraud Detection ML</h3>
-
-<p>
-Developed a classification model to detect fraudulent financial transactions using feature engineering and supervised machine learning techniques.</p>
-<p>   
-The project demonstrates how analytical models can support fraud monitoring in high-volume transaction environments.
-</p>
-<p>    
-Tools: Python, Scikit-learn, Pandas
-</p>
-<p>    
-Focus: Feature engineering, fraud detection modelling, model evaluation
-</p>
-
-<a class="project-link"
-href="https://github.com/FaithKirigi/Fraud-detection-ML">
-View Project
-</a>
-
-</div>
-<div class="project-card">
-
-<h3>Fraud Investigation: Transaction Pattern Analysis Case Study</h3>
-
-<p>
-A case study exploring behavioural patterns associated with fraudulent transactions.
-</p>
-<p>    
- The project focuses on identifying risk indicators and transaction characteristics that differentiate fraudulent activity from legitimate financial behaviour using exploratory data analysis.
-</p>
-<p>   
-
-Tools: Python, Pandas, Matplotlib
-</p>
-<p>    
-Focus: Fraud behaviour analysis, risk indicators, transaction patternss
-</p>
-
-<a class="project-link"
-href="https://github.com/FaithKirigi/fraud-investigation-case-study">
-View Project
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section id="resume" class="card">
-<section class="card">
-
-<h2>Key Insights</h2>
-
-<ul>
-
-<li>
-Fraudulent transactions often represent less than 1% of total volume,
-requiring specialized techniques to detect rare but high-impact events.
-</li>
-
-<li>
-Transaction velocity and abnormal spending behavior are strong indicators
-of potential fraud activity.
-</li>
-
-<li>
-Data analysis and machine learning models can significantly improve fraud
-detection accuracy compared to rule-based systems.
-</li>
-
-</ul>
-
-</section>
-
-<section class="card">
-
-<h2>Sample Analysis Visualization</h2>
-
-<p>
-Example visualization from fraud detection analysis.
-</p>
-
-<div style="text-align:center; margin-top:20px;">
-
-<a href="https://raw.githubusercontent.com/FaithKirigi/fraud-investigation-case-study/main/images/Distribution%20of%20transactions.png" target="_blank">
-    <img src="https://raw.githubusercontent.com/FaithKirigi/fraud-investigation-case-study/main/images/Distribution%20of%20transactions.png"
-         alt="Distribution of financial transactions showing fraud vs legitimate transactions"
-         style="width:70%; max-width:600px; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
-</a>
-
-<p style="font-size:14px; color:#666; margin-top:8px;">
-Click image to view full size
-</p>
-
-</div>
-</section>
-
-<h2>Resume</h2>
-
-<p>
-Download my resume below.
-</p>
-
-
-<a href="Faith_Kirigi_Data_Fraud_Analyst_CV.pdf" target="_blank" class="btn">
-    View CV
-</a>
-
-
-
-</section>
-
-<section id="contact" class="card">
-
-<h2>Contact</h2>
-
-<p>
-GitHub: 
-<a href="https://github.com/FaithKirigi">
-github.com/FaithKirigi
-</a>
-</p>
-
-<p>
-LinkedIn: 
-<a href="https://www.linkedin.com/in/faith-kirigi">
-linkedin.com/FaithKirigi 
-</a>
-</p>
-
-</section>
-
-</div>
-
-</body>
-</html>
+.project-button:hover {
+    background: #162f6b;
+}
