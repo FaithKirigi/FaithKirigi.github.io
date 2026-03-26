@@ -52,3 +52,19 @@ h2 {
     border-radius: 8px;
     font-size: 14px;
 }
+#code-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: #00ff00; /* classic green code effect */
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.3em;
+    overflow: hidden;
+    z-index: -1; /* behind your content */
+    white-space: pre; /* preserves spacing for code */
+    opacity: 0.15; /* subtle, so content is readable */
+}
