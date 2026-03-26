@@ -8,7 +8,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Code Background */
+/* Animated Code Background */
 #code-background {
     position: fixed;
     top: 0;
@@ -23,7 +23,7 @@ body {
     overflow: hidden;
     z-index: -1;
     white-space: pre;
-    opacity: 0.12;
+    opacity: 0.12; /* subtle */
 }
 
 /* Hero Section */
