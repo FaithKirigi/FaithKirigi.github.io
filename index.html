@@ -1,76 +1,313 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faith Kirigi | Fraud & Risk Analyst</title>
-    <link rel="stylesheet" href="style.css">
+<title>Faith Kirigi | Fraud & Risk Analyst</title>
+<link rel="stylesheet" href="style.css">
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background:#f5f5f5;
+}
+
+header{
+background:#1f2937;
+color:white;
+padding:20px;
+}
+
+nav a{
+color:white;
+margin-right:20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:40px;
+}
+
+.card{
+background:white;
+padding:20px;
+margin-bottom:20px;
+border-radius:8px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+h1{
+margin:0;
+}
+
+.project-link{
+text-decoration:none;
+color:#2563eb;
+font-weight:bold;
+}
+.projects-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.project-card{
+background:white;
+padding:20px;
+border-radius:8px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.project-card h3{
+margin-top:0;
+}
+h2{
+border-bottom:2px solid #e5e7eb;
+padding-bottom:5px;
+}
+</style>
 </head>
+
 <body>
+<div id="code-background"></div>    
 
-<!-- Animated Code Background -->
-<div id="code-background"></div>
+<header>
+<h1>Faith Kirigi</h1>
+<p>Fraud & Risk Analyst specializing in financial transaction analysis and fraud detection models</p>
+<p>Special interest: Fraud detection in digital payments, fintech platforms, and high-volume transaction systems.</p>
+<nav>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#resume">Resume</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
 
-<!-- Hero Section -->
-<section id="hero">
-    <h1>Faith Kirigi</h1>
-    <h2>Fraud & Risk Analyst</h2>
-    <p>Specializing in financial transaction analysis, fraud detection, and data-driven risk monitoring using Python, SQL, and machine learning.</p>
+<div class="container">
+
+<section id="about" class="card">
+<h2>About</h2>
+
+<p>
+I analyze financial transaction data to detect fraud patterns and risk indicators.
+My work focuses on Python, SQL, and machine learning models designed for high-volume transaction environments.
+I’m particularly interested in improving fraud detection in digital payments and fintech platforms.
+    
+</p>
+
+
+
 </section>
 
-<!-- Projects Section -->
-<section id="projects">
-    <h2>Fraud & Risk Analytics Projects</h2>
-    <div class="projects-container">
+<section id="skills" class="card">
 
-        <!-- Project 1 -->
-        <div class="project-card">
-            <img src="https://raw.githubusercontent.com/FaithKirigi/fraud-investigation-case-study/main/images/Distribution%20of%20transactions.png" alt="Fraud Investigation Visualization">
-            <h3>Fraud Investigation: Transaction Pattern Analysis</h3>
-            <p>A fraud investigation case study analysing transaction-level data to identify behavioural patterns associated with fraudulent activity using exploratory data analysis and risk indicators.</p>
-            <a href="https://github.com/FaithKirigi/fraud-investigation-case-study" target="_blank" class="project-button">View Project</a>
-        </div>
+<h2>Skills</h2>
 
-        <!-- Project 2 -->
-        <div class="project-card">
-            <img src="https://raw.githubusercontent.com/FaithKirigi/fraud-detection-project/main/images/fraud_model.png" alt="Fraud Detection Model">
-            <h3>Fraud Detection Model for Financial Transactions</h3>
-            <p>Built a machine learning model to detect fraudulent transactions using feature engineering, classification algorithms, and transaction behaviour analysis.</p>
-            <a href="https://github.com/FaithKirigi/fraud-detection-project" target="_blank" class="project-button">View Project</a>
-        </div>
+<ul>
+<h3>Fraud & Risk Analytics</h3>
+<ul>
+<li>Transaction analysis</li>
+<li>Anomaly detection</li>
+<li>Risk indicators</li>
+<li>Fraud pattern analysis</li>
+</ul>
 
-    </div>
+<h3>Technical Tools</h3>
+<ul>
+<li>Python (Pandas, NumPy)</li>
+<li>SQL</li>
+<li>Feature engineering</li>
+<li>Classification models</li>
+</ul>
+
+<h3>Visualization & BI</h3>
+<ul>
+<li>Power BI</li>
+<li>Matplotlib</li>
+<li>Seaborn</li>
+</ul>
+
 </section>
 
-<!-- JS for animated Python/SQL background -->
+<section id="projects" class="card">
+
+<h2>Fraud & Risk Analytics Projects</h2>
+
+<div class="projects-grid">
+
+<div class="project-card">
+
+<h3>Fraud Detection ML</h3>
+
+<p>
+Developed a classification model to detect fraudulent financial transactions using feature engineering and supervised machine learning techniques.</p>
+<p>   
+The project demonstrates how analytical models can support fraud monitoring in high-volume transaction environments.
+</p>
+<p>    
+Tools: Python, Scikit-learn, Pandas
+</p>
+<p>    
+Focus: Feature engineering, fraud detection modelling, model evaluation
+</p>
+
+<a class="project-link"
+href="https://github.com/FaithKirigi/Fraud-detection-ML">
+View Project
+</a>
+
+</div>
+<div class="project-card">
+
+<h3>Fraud Investigation: Transaction Pattern Analysis Case Study</h3>
+
+<p>
+A case study exploring behavioural patterns associated with fraudulent transactions.
+</p>
+<p>    
+ The project focuses on identifying risk indicators and transaction characteristics that differentiate fraudulent activity from legitimate financial behaviour using exploratory data analysis.
+</p>
+<p>   
+
+Tools: Python, Pandas, Matplotlib
+</p>
+<p>    
+Focus: Fraud behaviour analysis, risk indicators, transaction patternss
+</p>
+
+<a class="project-link"
+href="https://github.com/FaithKirigi/fraud-investigation-case-study">
+View Project
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="resume" class="card">
+<section class="card">
+
+<h2>Key Insights</h2>
+
+<ul>
+
+<li>
+Fraudulent transactions often represent less than 1% of total volume,
+requiring specialized techniques to detect rare but high-impact events.
+</li>
+
+<li>
+Transaction velocity and abnormal spending behavior are strong indicators
+of potential fraud activity.
+</li>
+
+<li>
+Data analysis and machine learning models can significantly improve fraud
+detection accuracy compared to rule-based systems.
+</li>
+
+</ul>
+
+</section>
+
+<section class="card">
+
+<h2>Sample Analysis Visualization</h2>
+
+<p>
+Example visualization from fraud detection analysis.
+</p>
+
+<div style="text-align:center; margin-top:20px;">
+
+<a href="https://raw.githubusercontent.com/FaithKirigi/fraud-investigation-case-study/main/images/Distribution%20of%20transactions.png" target="_blank">
+    <img src="https://raw.githubusercontent.com/FaithKirigi/fraud-investigation-case-study/main/images/Distribution%20of%20transactions.png"
+         alt="Distribution of financial transactions showing fraud vs legitimate transactions"
+         style="width:70%; max-width:600px; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+</a>
+
+<p style="font-size:14px; color:#666; margin-top:8px;">
+Click image to view full size
+</p>
+
+</div>
+</section>
+
+<h2>Resume</h2>
+
+<p>
+Download my resume below.
+</p>
+
+
+<a href="Faith_Kirigi_Data_Fraud_Analyst_CV.pdf" target="_blank" class="btn">
+    View CV
+</a>
+
+
+
+</section>
+
+<section id="contact" class="card">
+
+<h2>Contact</h2>
+
+<p>
+GitHub: 
+<a href="https://github.com/FaithKirigi">
+github.com/FaithKirigi
+</a>
+</p>
+
+<p>
+LinkedIn: 
+<a href="https://www.linkedin.com/in/faith-kirigi">
+linkedin.com/FaithKirigi 
+</a>
+</p>
+
+</section>
+
+</div>
 <script>
 const codeLines = [
-    "import pandas as pd",
-    "df = pd.read_csv('transactions.csv')",
-    "fraud = df[df['isFraud'] == 1]",
-    "from sklearn.ensemble import RandomForestClassifier",
-    "model.fit(X_train, y_train)",
-    "y_pred = model.predict(X_test)",
-    "plt.hist(df['amount'], bins=50)",
-    "SELECT * FROM transactions WHERE amount > 10000;",
-    "JOIN accounts ON transactions.account_id = accounts.id;",
-    "WHERE transaction_date >= '2026-01-01';"
+`import pandas as pd`,
+`df = pd.read_csv('transactions.csv')`,
+`fraud = df[df['isFraud'] == 1]`,
+`SELECT * FROM transactions WHERE amount > 10000;`,
+`JOIN accounts ON transactions.account_id = accounts.id;`,
+`plt.hist(df['amount'], bins=50)`,
+`from sklearn.ensemble import RandomForestClassifier`,
+`model.fit(X_train, y_train)`,
+`y_pred = model.predict(X_test)`,
+`WHERE transaction_date >= '2026-01-01'`
 ];
 
 const bg = document.getElementById('code-background');
 
+function randomCodeLine() {
+    return codeLines[Math.floor(Math.random() * codeLines.length)];
+}
+
 function generateBackground() {
     let code = '';
-    for (let i = 0; i < 100; i++) {
-        code += codeLines[Math.floor(Math.random() * codeLines.length)] + '\n';
+    for (let i=0; i<100; i++){
+        code += randomCodeLine() + '\n';
     }
     bg.textContent = code;
 }
 
-// refresh every 2 seconds for subtle motion
+// refresh every 2 seconds to create motion
 setInterval(generateBackground, 2000);
 generateBackground();
 </script>
-
 </body>
+</html>
+
 </html>
