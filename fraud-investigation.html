@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fraud Investigation Case Study</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+  <h2 class="logo">Faith Kirigi</h2>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+  </div>
+</nav>
+
+<section class="project-page">
+
+  <div class="project-container">
+
+    <h1>Fraud Investigation Case Study</h1>
+
+    <!-- OBJECTIVE -->
+    <h2>Objective</h2>
+    <p>
+    This analysis focuses on identifying patterns associated with fraudulent financial transactions by examining transaction-level data. The goal is to uncover behavioral indicators that can support fraud detection and improve risk monitoring strategies.
+    </p>
+
+    <!-- IMAGE -->
+    <img src="https://raw.githubusercontent.com/FaithKirigi/fraud-investigation-case-study/main/images/Distribution%20of%20transactions.png" class="project-image">
+    <p class="image-caption">Distribution of transaction patterns across fraud vs non-fraud cases</p>
+     <!-- PROBLEM -->
+     <h2>Problem</h2>
+     <p>
+       Financial transaction systems generate large volumes of data, making it difficult to detect fraudulent activity in real time. 
+       This project focuses on identifying behavioral patterns and risk indicators that differentiate fraudulent transactions from legitimate ones.
+     </p>
+ 
+     <!-- APPROACH -->
+     <h2>Approach</h2>
+     <p>
+       The analysis involved data cleaning, exploratory data analysis, and feature engineering to understand transaction behavior. 
+       Key variables such as transaction amount, frequency, and account activity were analyzed to identify anomalies and patterns associated with fraud.
+     </p>
+    <!-- KEY GOALS -->
+    
+    <h2>Key Goals</h2>
+    <ul>
+      <li>Identify behavioral patterns linked to fraudulent transactions</li>
+      <li>Compare characteristics of fraudulent vs legitimate transactions</li>
+      <li>Highlight high-risk transaction behaviors</li>
+      <li>Support development of risk monitoring strategies</li>
+    </ul>
+
+    <!-- TOOLS -->
+    <h2>Tools Used</h2>
+    <ul>
+      <li>Python – Data analysis and exploration</li>
+      <li>Pandas & NumPy – Data manipulation</li>
+      <li>Matplotlib / Seaborn – Data visualization</li>
+    </ul>
+
+    <!-- INSIGHTS -->
+    <h2>Key Insights</h2>
+    <ul>
+      <li>Fraudulent transactions showed distinct behavioral patterns compared to legitimate transactions.</li>
+      <li>Fraud is primarily driven by behavioural anomalies rather than demographic characteristics.</li>
+      <li> Location mismatch and foreign transactions are the strongest contextual indicators of fraud.    </li>
+      <li> Fraud probability increases significantly when transaction velocity becomes unusually high.    </li>
+      <li> Transactions originating from low device trust scores show a much higher likelihood of fraud.    </li>
+      <li>Patterns observed suggest opportunities for rule-based monitoring and early fraud detection.</li>
+    </ul>
+
+    <!-- BUSINESS IMPACT -->
+    <h2>Business Impact</h2>
+    <p>
+    The findings from this analysis can support financial institutions in improving fraud detection systems by identifying high-risk transaction behaviors earlier. These insights can be used to enhance transaction monitoring rules, reduce fraud losses, and improve overall risk management processes.
+    Ways in which this investigation can support Fraud & Risk teams
+    <ul>
+        <li>Improving fraud monitoring efficiency by reducing unnceccessary manual reviews</li>
+        <li>Strengthening risk based transactional reviews</li>
+        <li>Supporting the design of rule based fraud detection frameworks</li>
+    </ul>
+    </p>
+    <img src="https://raw.githubusercontent.com/FaithKirigi/fraud-investigation-case-study/main/images/Fraud distribution across risk levels.png" class="project-image">
+    <h3>Risk Model Performance</h3>
+
+<table>
+  <tr>
+    <th>Risk Level</th>
+    <th>Non-Fraud (%)</th>
+    <th>Fraud (%)</th>
+  </tr>
+  <tr>
+    <td>High Risk</td>
+    <td>57.3%</td>
+    <td>42.7%</td>
+  </tr>
+  <tr>
+    <td>Medium Risk</td>
+    <td>96.7%</td>
+    <td>3.3%</td>
+  </tr>
+  <tr>
+    <td>Low Risk</td>
+    <td>99.99%</td>
+    <td>0.01%</td>
+  </tr>
+</table>
+
+<p class="insight">
+The model effectively concentrates fraudulent transactions within the high-risk segment, demonstrating strong risk separation capability.
+</p>
+    <!-- CTA -->
+    <a href="https://github.com/FaithKirigi/fraud-investigation-case-study" target="_blank" class="btn">
+      View Full Code on GitHub
+    </a>
+
+  </div>
+
+</section>
+
+</body>
+</html>
