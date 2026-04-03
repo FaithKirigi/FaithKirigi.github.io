@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fraud Detection Model</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+  <h2 class="logo">Faith Kirigi</h2>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="index.html#portfolio">Projects</a>
+  </div>
+</nav>
+
+<section class="project-page">
+
+  <div class="project-container">
+
+    <h1>Fraud Detection Model</h1>
+
+  
+<!-- Overview -->
+<h2>Overview</h2>
+<p>
+    This project uses machine learning to detect fraudulent financial transactions based on behavior patterns, transaction time, user demographics, and geolocation. It applies multiple classification algorithms and compares their effectiveness on an imbalanced dataset.
+
+</p>
+
+<!-- PROBLEM -->
+    <h2>Problem</h2>
+    <p>
+      Detecting fraudulent transactions within large-scale financial datasets is challenging due to class imbalance and subtle behavioral differences between fraudulent and legitimate activity. 
+      This project focuses on building a model to classify transactions based on risk.
+    </p>
+
+    <!-- DATA -->
+    <h2>Data Overview</h2>
+    <p>
+      The dataset consists of transaction-level data including variables such as transaction amount, account activity, and behavioral patterns. 
+      The data required preprocessing, cleaning, and feature engineering to improve model performance.
+    </p>
+
+    <!-- APPROACH -->
+    <h2>Approach</h2>
+    <p>
+      The workflow included data cleaning, exploratory data analysis, and feature engineering to extract meaningful predictors. 
+      A classification model was then built to distinguish between fraudulent and non-fraudulent transactions.
+    </p>
+
+    <!-- MODEL -->
+    <h2>Model Development</h2>
+    <p>A decision tree was developed to estimate the probability of fraud based on transaction behavior. The model was trained on structured features and evaluated based on its ability to correctly identify high-risk transactions.</p>    
+
+     <!-- TOOLS -->
+     <h2>Tools Used</h2>
+     <ul>
+       <li>Python – Data analysis and exploration</li>
+       <li>pandas, numpy, seaborn, matplotlib, scikit-learn, geoply</li>
+     </ul>
+
+    <!-- RESULTS -->
+    <h2>Model Performance</h2>
+
+
+    <p class="insight">
+        The model demonstrated strong performance across all key metrics, with particularly high Precision and AUC-ROC, making it reliable for fraud detection.
+        The results suggested the model balances accuracy and sensitivity, ensuring minimal false positives and false negatives.
+        </p>
+
+        <h3>Evaluation Metrics for the Final decision tree</h3>
+
+        <table>
+          <tr>
+            <th>Evaluation metric</th>
+            <th>Score(%)</th>
+          </tr>
+          <tr>
+            <td>Accuracy</td>
+            <td>94%</td>
+          </tr>
+          <tr>
+            <td>Precision</td>
+            <td>95%</td>
+          </tr>
+          <tr>
+            <td>Recall</td>
+            <td>94%</td>
+          </tr>
+          <tr>
+            <td>F1 Score</td>
+            <td>94%</td>
+          </tr>
+          <tr>
+            <td>AUC-ROC</td>
+            <td>98%</td>
+          </tr>
+        </table>
+
+    <!-- VISUAL -->
+    <img src="Decision tree.png" alt="Model Results" class="project-image">
+
+    <!-- CHALLENGES -->
+    <h2>Challenges</h2>
+    <p>
+      One of the key challenges was handling class imbalance, where fraudulent transactions represent a very small proportion of the dataset. 
+      This required careful evaluation to ensure the model was not biased toward predicting non-fraud.
+    </p>
+
+    <!-- IMPACT -->
+    <h2>Business Impact</h2>
+    <p> A machine learning model like this that is capable of real-time fraud detection and seamless integration into financial systems could significantly reduce fraud instances.
+
+   </p>
+  
+     <!-- CTA -->
+     <a href="https://github.com/FaithKirigi/Fraud-detection-ML" target="_blank" class="btn">
+        View Full Code on GitHub
+      </a>
+  
+    </div>
+
+</section>
+
+</body>
+</html>
