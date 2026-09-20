@@ -2,19 +2,25 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Faith Kirigi | Fraud & Risk Analyst</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Faith Kirigi | Fraud & Risk Analyst</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
 
 <body>
 
     <!-- NAVBAR -->
     <nav class="navbar">
+
         <a href="index.html" class="logo">Faith Kirigi</a>
 
         <div class="nav-links">
@@ -23,62 +29,68 @@
             <a href="portfolio.html">Portfolio</a>
             <a href="contact.html">Contact</a>
         </div>
+
     </nav>
 
 
-    <!-- HOME -->
+    <!-- HERO -->
     <main class="home-page">
 
-        <div class="home-container">
+        <div class="hero-container">
 
+            <!-- LEFT: Photo -->
             <div class="hero-image">
-                <img src="profile.jpg" alt="Faith Kirigi">
+                <img src="profile.jpeg" alt="Faith Kirigi">
             </div>
 
-            <div class="hero-text">
 
-                <p class="eyebrow">DATA · RISK · BUSINESS INTELLIGENCE</p>
+            <!-- RIGHT: Text -->
+            <div class="hero-text">
 
                 <h1>Faith Kirigi</h1>
 
                 <div class="title-rotator">
-                    <span id="changing-title">Data Analyst</span>
+                    <span id="changing-title">Fraud Analyst</span>
                 </div>
 
-                <p class="hero-description">
-                    I turn complex financial and operational data into
-                    actionable insights using SQL, Python, Excel and business
-                    intelligence tools, with particular experience in fraud,
-                    risk and transaction analytics.
+                <p>
+                    Fraud & Risk Data Analyst specializing in transaction
+                    monitoring and fraud detection in digital payment systems.
                 </p>
 
-                <div class="hero-actions">
+                <p>
+                    I use Python, SQL, and machine learning to analyze
+                    high-volume transaction data, uncover suspicious patterns,
+                    and support data-driven risk decisions.
+                </p>
 
-                    <a href="portfolio.html" class="btn">
-                        View My Work
-                    </a>
+                <p>
+                    Focused on building data-driven solutions that reduce fraud
+                    risk and improve detection accuracy.
+                </p>
 
-                    <a href="Faith_Kirigi_CV.pdf"
-                       class="btn-outline"
-                       target="_blank">
+
+                <div class="hero-buttons">
+                    <a href="Faith_Kirigi_CV.pdf" class="btn">
                         Download CV
                     </a>
-
                 </div>
+
 
                 <div class="social-icons">
 
-                    <a href="https://github.com/FaithKirigi"
-                       target="_blank"
-                       aria-label="GitHub">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-
-                    <!-- Keep your existing LinkedIn URL here -->
                     <a href="https://www.linkedin.com/in/faith-kirigi/"
                        target="_blank"
+                       rel="noopener noreferrer"
                        aria-label="LinkedIn">
-                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+
+                    <a href="https://github.com/FaithKirigi"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="GitHub">
+                        <i class="fab fa-github"></i>
                     </a>
 
                 </div>
@@ -92,10 +104,11 @@
 
     <script>
         const titles = [
-            "Data Analyst",
             "Fraud Analyst",
-            "Risk Analyst",
-            "BI Analyst"
+            "Financial Analyst",
+            "Data Analyst",
+            "BI Analyst",
+            "Risk Analyst"
         ];
 
         let index = 0;
@@ -109,10 +122,11 @@
                 index = (index + 1) % titles.length;
                 titleElement.textContent = titles[index];
                 titleElement.style.opacity = 1;
-            }, 500);
+            }, 600);
 
         }, 2200);
     </script>
 
 </body>
+
 </html>
