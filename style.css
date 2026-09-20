@@ -219,10 +219,10 @@ section + section {
 .tech-stack {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 18px;
-    margin: 30px 0;
+    margin: 15px 0 0;
 }
 
 /* ICONS */
