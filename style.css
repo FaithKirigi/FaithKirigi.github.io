@@ -132,8 +132,10 @@ body {
   
 /* ABOUT SECTION - PAGE STYLE */
 
+
+}
 #about {
-    padding: 70px 10%;
+    padding: 60px 10%;
     background: #ffffff;
 
     display: flex;
@@ -144,7 +146,6 @@ body {
 /* CENTERED CONTENT */
 .about-content {
     max-width: 750px;
-    text-align: left;
 }
 
 /* TITLE */
@@ -206,13 +207,17 @@ p {
 }
 .hero-container,
 .about-content,
+.portfolio-container,
 .project-container,
 .contact-container {
-    max-width: 1000px;
-    margin: auto;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
 }
-section + section {
-    margin-top: 40px;
+.portfolio-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 /* TECH STACK */
 
@@ -244,9 +249,7 @@ section + section {
 }
 /* SKILLS & TOOLS */
 
-.skills-section {
-    margin: 40px 0 50px;
-}
+
 
 .skills-section > h2 {
     font-size: 28px;
@@ -269,32 +272,41 @@ section + section {
 
 }
 
-.skills-section > h2 {
-    font-size: 30px;
+.skills-section {
+    margin: 0 0 50px;
+}
+
+.skills-section > h2,
+.projects-section > h2 {
+    font-size: 28px;
     color: #1f3c88;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill-group {
+    padding: 22px;
+}
+
+.skill-group h3 {
+    font-size: 16px;
+    margin: 0 0 16px;
 }
 
 .skill-items {
-    display: flex;
-    flex-wrap: wrap;
     gap: 8px;
 }
 
 .skill-items span {
-    font-size: 13px;
-    color: #394150;
-    background: #f3f6fb;
-    border: 1px solid #e3e9f2;
-    border-radius: 6px;
-    padding: 7px 10px;
+    font-size: 12.5px;
+    padding: 6px 9px;
 }
 
-.skill-items span:hover {
-    background: #e9eff9;
-    transform: translateY(-2px);
-    transition: 0.2s ease;
-}
 
 /* SKILLS RESPONSIVE */
 
@@ -413,10 +425,6 @@ section + section {
     }
 }
 
-
-
-
-
 .project-page {
     padding: 80px 10%;
 }
@@ -462,8 +470,9 @@ section + section {
 /* PROJECT SECTION */
 
 #portfolio {
-    padding: 70px 10%;
+    padding: 60px 8%;
     background: #f7f9fc;
+}
 }
 #portfolio {
     display: block;
@@ -631,7 +640,7 @@ section + section {
 
 .case-study-container {
     width: 100%;
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -641,9 +650,15 @@ section + section {
 }
 
 .case-study .case-block {
-    padding: 32px 0;
+    padding: 28px 0;
     margin: 0;
     border-top: 1px solid #dde3ec;
+}
+
+.case-study .case-study-header {
+    max-width: 800px;
+    margin-bottom: 25px;
+}
 }
 
 .case-study section + section {
