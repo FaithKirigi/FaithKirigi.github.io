@@ -303,6 +303,15 @@ section + section {
         grid-template-columns: 1fr;
     }
 }
+.projects-section {
+    margin-top: 55px;
+}
+
+.projects-section > h2 {
+    font-size: 28px;
+    color: #1f3c88;
+    margin-bottom: 25px;
+}
 
 /* PROJECT GRID */
 .projects-container {
