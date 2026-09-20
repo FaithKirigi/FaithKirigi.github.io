@@ -139,48 +139,38 @@ a {
    ========================================================= */
 
 .home-page {
-    padding: 90px 10% 70px;
+    padding: 75px 10% 80px;
 }
 
 .hero-container {
     width: 100%;
-    max-width: 1100px;
+    max-width: 1150px;
     margin: 0 auto;
 
     display: grid;
-    grid-template-columns: 300px minmax(0, 600px);
-    justify-content: center;
+    grid-template-columns: minmax(0, 600px) 330px;
     align-items: center;
+    justify-content: space-between;
 
-    gap: 80px;
-}
-
-
-/* PROFILE IMAGE */
-
-.hero-image {
-    display: flex;
-    justify-content: center;
-}
-
-.hero-image img {
-    display: block;
-
-    width: 280px;
-    height: 280px;
-
-    object-fit: cover;
-    border-radius: 50%;
-
-    box-shadow: 0 10px 30px rgba(31, 60, 136, 0.12);
+    gap: 100px;
 }
 
 
 /* HERO TEXT */
 
 .hero-text {
-    width: 100%;
     max-width: 600px;
+}
+
+.hero-label {
+    margin: 0 0 16px !important;
+
+    color: #1f3c88 !important;
+
+    font-size: 12px !important;
+    font-weight: 700;
+
+    letter-spacing: 1.4px;
 }
 
 .hero-text h1 {
@@ -188,49 +178,94 @@ a {
 
     color: #222;
 
-    font-size: 46px;
+    font-size: 52px;
     line-height: 1.1;
 }
 
-.hero-text p {
-    max-width: 590px;
 
-    margin: 0 0 13px;
-
-    color: #555;
-
-    font-size: 16px;
-    line-height: 1.7;
-}
-
-
-/* TITLE ROTATOR */
+/* TITLE */
 
 .title-rotator {
-    height: 36px;
+    height: 38px;
 
-    margin: 0 0 18px;
+    margin: 0 0 20px;
 
     color: #1f3c88;
 
-    font-size: 24px;
+    font-size: 25px;
     font-weight: 500;
 }
 
 #changing-title {
     opacity: 1;
+
     transition: opacity 0.6s ease;
 }
 
 
-/* HERO BUTTON */
+/* DESCRIPTION */
 
-.hero-buttons {
-    margin-top: 24px;
+.hero-text .hero-description {
+    max-width: 570px;
+
+    margin: 0 0 18px;
+
+    color: #555;
+
+    font-size: 17px;
+    line-height: 1.75;
 }
 
 
-/* SOCIAL ICONS */
+/* TOOL LINE */
+
+.hero-text .hero-tools {
+    margin: 0;
+
+    color: #333;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    line-height: 1.6;
+}
+
+
+/* BUTTONS */
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 28px;
+}
+
+
+/* PHOTO */
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    display: block;
+
+    width: 310px;
+    height: 310px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    box-shadow: 0 12px 35px rgba(31, 60, 136, 0.13);
+}
+
+
+/* SOCIALS */
 
 .social-icons {
     display: flex;
@@ -238,7 +273,7 @@ a {
 
     gap: 20px;
 
-    margin-top: 20px;
+    margin-top: 23px;
 }
 
 .social-icons a {
