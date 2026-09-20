@@ -623,16 +623,17 @@ section + section {
    RECRUITER-FRIENDLY PROJECT CASE STUDY
    ===================================== */
 
+
 .case-study {
-    padding: 60px 10% 90px;
+    padding: 55px 10% 80px;
     background: #f7f9fc;
 }
 
 .case-study-container {
+    width: 100%;
     max-width: 1000px;
     margin: 0 auto;
 }
-
 
 /* BACK LINK */
 
@@ -848,7 +849,14 @@ section + section {
     .business-impact {
         margin: 20px 0;
     }
+.case-study .case-block {
+    padding: 38px 0;
+    margin: 0;
+}
 
+.case-study section + section {
+    margin-top: 0;
+}
     .technical-project {
         flex-direction: column;
         align-items: flex-start;
