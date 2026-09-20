@@ -139,12 +139,7 @@ a {
    ========================================================= */
 
 .home-page {
-    min-height: calc(100vh - 72px);
-
-    display: flex;
-    align-items: center;
-
-    padding: 70px 10%;
+    padding: 55px 10% 60px;
 }
 
 .hero-container {
@@ -154,8 +149,7 @@ a {
 
     display: flex;
     align-items: center;
-
-    gap: 75px;
+    gap: 65px;
 }
 
 
@@ -261,10 +255,12 @@ a {
    About / Portfolio / Contact
    ========================================================= */
 
-.standard-page {
-    min-height: calc(100vh - 72px);
+/* =========================================================
+   STANDARD PAGES
+   ========================================================= */
 
-    padding: 60px 10% 80px;
+.standard-page {
+    padding: 38px 10% 50px;
 }
 
 .standard-container {
@@ -273,12 +269,37 @@ a {
     margin: 0 auto;
 }
 
-.portfolio-container {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
+.page-header {
+    max-width: 760px;
+    margin-bottom: 28px;
 }
 
+.page-label {
+    margin: 0 0 7px;
+
+    color: #1f3c88;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+}
+
+.page-header h1 {
+    margin: 0 0 10px;
+
+    color: #222;
+    font-size: 34px;
+    line-height: 1.2;
+}
+
+.page-header > p:not(.page-label) {
+    max-width: 700px;
+
+    margin: 0 0 8px;
+
+    color: #555;
+    font-size: 15px;
+    line-height: 1.65;
+}
 
 /* =========================================================
    6. STANDARD PAGE HEADER
@@ -325,28 +346,26 @@ a {
 .about-page-content {
     max-width: 760px;
 
-    padding-top: 30px;
+    padding-top: 20px;
 
     border-top: 1px solid #dde3ec;
 }
 
 .about-page-content p {
-    margin: 0 0 18px;
+    margin: 0 0 14px;
 
     color: #555;
-    font-size: 16px;
-    line-height: 1.75;
+    font-size: 15px;
+    line-height: 1.7;
 }
 
 .page-actions {
     display: flex;
     align-items: center;
-
     gap: 12px;
 
-    margin-top: 28px;
+    margin-top: 22px;
 }
-
 
 /* =========================================================
    8. PORTFOLIO — SKILLS
@@ -401,16 +420,73 @@ a {
    9. PORTFOLIO — PROJECTS
    ========================================================= */
 
+/* =========================================================
+   PORTFOLIO
+   ========================================================= */
+
+.portfolio-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* SKILLS & TOOLS */
+
+.portfolio-skills {
+    margin-bottom: 38px;
+}
+
+.portfolio-skills > h2,
+.portfolio-projects > h2 {
+    margin: 0 0 18px;
+    color: #1f3c88;
+    font-size: 24px;
+}
+
+.skills-list {
+    border-top: 1px solid #dde3ec;
+}
+
+.skill-row {
+    display: grid;
+    grid-template-columns: 210px 1fr;
+    gap: 28px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #dde3ec;
+}
+
+.skill-row h3 {
+    margin: 0;
+
+    color: #222;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.skill-row p {
+    margin: 0;
+
+    color: #555;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* SELECTED PROJECTS */
+
 .portfolio-projects {
-    margin-top: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
 .projects-container {
     display: grid;
-
     grid-template-columns: repeat(2, minmax(0, 1fr));
-
-    gap: 22px;
+    gap: 18px;
 }
 
 .project-card {
@@ -419,15 +495,15 @@ a {
     display: flex;
     flex-direction: column;
 
-    padding: 24px;
+    padding: 22px;
 
     background: #ffffff;
 
     border: 1px solid #e5eaf1;
     border-top: 3px solid #1f3c88;
-    border-radius: 9px;
+    border-radius: 8px;
 
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 
     transition:
         transform 0.2s ease,
@@ -436,24 +512,23 @@ a {
 
 .project-card:hover {
     transform: translateY(-3px);
-
-    box-shadow: 0 7px 17px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.07);
 }
 
 .project-card h3 {
-    margin: 0 0 11px;
+    margin: 0 0 9px;
 
     color: #222;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.35;
 }
 
 .project-card > p {
-    margin: 0 0 17px;
+    margin: 0 0 14px;
 
     color: #555;
-    font-size: 14px;
-    line-height: 1.65;
+    font-size: 13.5px;
+    line-height: 1.6;
 }
 
 
@@ -462,13 +537,14 @@ a {
 .project-card .project-tags {
     display: flex;
     flex-wrap: wrap;
+    gap: 6px;
 
-    gap: 7px;
-
-    margin-bottom: 18px;
+    margin: 0 0 15px;
 }
 
 .project-card .project-tags span {
+    display: inline-block;
+
     padding: 5px 8px;
 
     color: #394150;
@@ -486,11 +562,10 @@ a {
 .project-links {
     display: flex;
     align-items: center;
-
-    gap: 20px;
+    gap: 18px;
 
     margin-top: auto;
-    padding-top: 5px;
+    padding-top: 4px;
 }
 
 .project-links a {
@@ -505,7 +580,6 @@ a {
 .project-links a:hover {
     text-decoration: underline;
 }
-
 
 /* =========================================================
    10. CONTACT PAGE
