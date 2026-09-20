@@ -242,7 +242,67 @@ section + section {
     padding: 6px 10px;
     border-radius: 6px;
 }
+/* SKILLS & TOOLS */
 
+.skills-section {
+    margin: 40px 0 50px;
+}
+
+.skills-section > h2 {
+    font-size: 28px;
+    color: #1f3c88;
+    margin-bottom: 25px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill-group {
+    background: #ffffff;
+    padding: 22px;
+    border-radius: 10px;
+    border-top: 3px solid #1f3c88;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.skill-group h3 {
+    font-size: 16px;
+    color: #1f3c88;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.skill-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-items span {
+    font-size: 13px;
+    color: #394150;
+    background: #f3f6fb;
+    border: 1px solid #e3e9f2;
+    border-radius: 6px;
+    padding: 7px 10px;
+}
+
+.skill-items span:hover {
+    background: #e9eff9;
+    transform: translateY(-2px);
+    transition: 0.2s ease;
+}
+
+/* SKILLS RESPONSIVE */
+
+@media (max-width: 850px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* PROJECT GRID */
 .projects-container {
