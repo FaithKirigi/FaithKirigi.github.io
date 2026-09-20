@@ -1,130 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fraud Detection Model</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fraud Detection Model | Faith Kirigi</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<nav class="navbar">
-  <h2 class="logo">Faith Kirigi</h2>
-  <div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="index.html#portfolio">Projects</a>
-  </div>
-</nav>
+    <!-- NAVBAR -->
+    <nav class="navbar">
 
-<section class="project-page">
+        <a href="index.html" class="logo">Faith Kirigi</a>
 
-  <div class="project-container">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
 
-    <h1>Fraud Detection Model</h1>
-
-  
-<!-- Overview -->
-<h2>Overview</h2>
-<p>
-    This project uses machine learning to detect fraudulent financial transactions based on behavior patterns, transaction time, user demographics, and geolocation. It applies multiple classification algorithms and compares their effectiveness on an imbalanced dataset.
-
-</p>
-
-<!-- PROBLEM -->
-    <h2>Problem</h2>
-    <p>
-      Detecting fraudulent transactions within large-scale financial datasets is challenging due to class imbalance and subtle behavioral differences between fraudulent and legitimate activity. 
-      This project focuses on building a model to classify transactions based on risk.
-    </p>
-
-    <!-- DATA -->
-    <h2>Data Overview</h2>
-    <p>
-      The dataset consists of transaction-level data including variables such as transaction amount, account activity, and behavioral patterns. 
-      The data required preprocessing, cleaning, and feature engineering to improve model performance.
-    </p>
-
-    <!-- APPROACH -->
-    <h2>Approach</h2>
-    <p>
-      The workflow included data cleaning, exploratory data analysis, and feature engineering to extract meaningful predictors. 
-      A classification model was then built to distinguish between fraudulent and non-fraudulent transactions.
-    </p>
-
-    <!-- MODEL -->
-    <h2>Model Development</h2>
-    <p>A decision tree was developed to estimate the probability of fraud based on transaction behavior. The model was trained on structured features and evaluated based on its ability to correctly identify high-risk transactions.</p>    
-
-     <!-- TOOLS -->
-     <h2>Tools Used</h2>
-     <ul>
-       <li>Python – Data analysis and exploration</li>
-       <li>pandas, numpy, seaborn, matplotlib, scikit-learn, geoply</li>
-     </ul>
-
-    <!-- RESULTS -->
-    <h2>Model Performance</h2>
+    </nav>
 
 
-    <p class="insight">
-        The model demonstrated strong performance across all key metrics, with particularly high Precision and AUC-ROC, making it reliable for fraud detection.
-        The results suggested the model balances accuracy and sensitivity, ensuring minimal false positives and false negatives.
-        </p>
+    <!-- CASE STUDY -->
+    <main class="case-study">
 
-        <h3>Evaluation Metrics for the Final decision tree</h3>
+        <div class="case-study-container">
 
-        <table>
-          <tr>
-            <th>Evaluation metric</th>
-            <th>Score(%)</th>
-          </tr>
-          <tr>
-            <td>Accuracy</td>
-            <td>94%</td>
-          </tr>
-          <tr>
-            <td>Precision</td>
-            <td>95%</td>
-          </tr>
-          <tr>
-            <td>Recall</td>
-            <td>94%</td>
-          </tr>
-          <tr>
-            <td>F1 Score</td>
-            <td>94%</td>
-          </tr>
-          <tr>
-            <td>AUC-ROC</td>
-            <td>98%</td>
-          </tr>
-        </table>
+            <a href="portfolio.html" class="back-link">
+                ← Back to Portfolio
+            </a>
 
-    <!-- VISUAL -->
-    <img src="Decision tree.png" alt="Model Results" class="project-image">
 
-    <!-- CHALLENGES -->
-    <h2>Challenges</h2>
-    <p>
-      One of the key challenges was handling class imbalance, where fraudulent transactions represent a very small proportion of the dataset. 
-      This required careful evaluation to ensure the model was not biased toward predicting non-fraud.
-    </p>
+            <!-- HEADER -->
+            <header class="case-study-header">
 
-    <!-- IMPACT -->
-    <h2>Business Impact</h2>
-    <p> A machine learning model like this that is capable of real-time fraud detection and seamless integration into financial systems could significantly reduce fraud instances.
+                <p class="project-category">
+                    MACHINE LEARNING · FRAUD DETECTION · CLASSIFICATION
+                </p>
 
-   </p>
-  
-     <!-- CTA -->
-     <a href="https://github.com/FaithKirigi/Fraud-detection-ML" target="_blank" class="btn">
-        View Full Code on GitHub
-      </a>
-  
-    </div>
+                <h1>Fraud Detection Model</h1>
 
-</section>
+                <p class="case-study-intro">
+                    Building and evaluating machine-learning models to identify
+                    fraudulent transactions using transaction, customer,
+                    merchant, geographic, and behavioral features.
+                </p>
+
+
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>Scikit-learn</span>
+                    <span>Classification</span>
+                    <span>Feature Engineering</span>
+                </div>
+
+            </header>
+
+
+            <!-- 01 -->
+            <section class="case-block">
+
+                <p class="section-label">01 — THE CHALLENGE</p>
+
+                <h2>
+                    Detecting fraudulent transactions without relying on a single signal
+                </h2>
+
+                <p>
+                    Fraudulent transactions can resemble legitimate customer
+                    activity, making simple rule-based identification difficult.
+                    Effective detection requires combining multiple transaction
+                    and behavioral characteristics to distinguish suspicious
+                    activity.
+                </p>
+
+                <p>
+                    The objective of this project was to engineer useful fraud
+                    indicators, compare several classification algorithms, and
+                    identify a model capable of separating fraudulent and
+                    legitimate transactions effectively.
+                </p>
+
+            </section>
+
+
+            <!-- 02 -->
+            <section class="case-block">
+
+                <p class="section-label">02 — WHAT I DID</p>
+
+                <h2>
+                    Engineered transaction features and compared classification models
+                </h2>
+
+                <p>
+                    I prepared the transaction data and engineered additional
+                    features including customer age, geographic distance,
+                    transaction time, day, and week. Categorical variables such
+                    as merchant category and occupation were encoded for
+                    modelling, while numerical features were prepared for model
+                    training.
+                </p>
+
+                <p>
+                    I trained and evaluated Logistic Regression, Decision Tree,
+                    K-Nearest Neighbors, and Support Vector Machine classifiers,
+                    comparing their ability to correctly identify fraudulent and
+                    legitimate transactions.
+                </p>
+
+            </section>
+
+
+            <!-- 03 -->
+            <section class="case-block">
+
+                <p class="section-label">03 — KEY FINDINGS</p>
+
+                <h2>What the model comparison revealed</h2>
+
+
+                <div class="metric-grid">
+
+                    <div class="metric-card">
+                        <span class="metric-value">0.94</span>
+                        <span class="metric-label">
+                            Decision Tree accuracy
+                        </span>
+                    </div>
+
+                    <div class="metric-card">
+                        <span class="metric-value">0.94</span>
+                        <span class="metric-label">
+                            Decision Tree recall
+                        </span>
+                    </div>
+
+                    <div class="metric-card">
+                        <span class="metric-value">0.98</span>
+                        <span class="metric-label">
+                            ROC-AUC
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="finding-list">
+
+                    <div class="finding">
+
+                        <h3>Feature engineering added behavioral context</h3>
+
+                        <p>
+                            Transforming raw transaction information into
+                            customer age, geographic distance, and time-based
+                            features gave the models additional information for
+                            distinguishing transaction behavior.
+                        </p>
+
+                    </div>
+
+
+                    <div class="finding">
+
+                        <h3>Model selection required more than accuracy</h3>
+
+                        <p>
+                            I compared classification performance using
+                            precision, recall, F1 score, confusion matrices, and
+                            ROC-AUC rather than relying on accuracy alone.
+                        </p>
+
+                    </div>
+
+
+                    <div class="finding">
+
+                        <h3>The Decision Tree produced the strongest overall result</h3>
+
+                        <p>
+                            The selected Decision Tree achieved approximately
+                            94% accuracy and recall, 95% precision, a 94% F1
+                            score, and a ROC-AUC of approximately 0.98.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 04 -->
+            <section class="case-block business-impact">
+
+                <p class="section-label">04 — WHY IT MATTERS</p>
+
+                <h2>
+                    Fraud detection depends on identifying suspicious activity while controlling false alerts
+                </h2>
+
+                <p>
+                    A useful fraud model must identify as much fraudulent
+                    activity as possible while avoiding an excessive number of
+                    legitimate transactions being incorrectly flagged.
+                </p>
+
+                <p>
+                    Comparing precision, recall, false positives, false
+                    negatives, and overall discrimination provides a more
+                    practical view of whether a model could support fraud
+                    monitoring and investigation workflows.
+                </p>
+
+            </section>
+
+
+            <!-- 05 -->
+            <section class="case-block">
+
+                <p class="section-label">05 — SKILLS DEMONSTRATED</p>
+
+                <div class="case-skills">
+                    <span>Python</span>
+                    <span>Scikit-learn</span>
+                    <span>Feature Engineering</span>
+                    <span>Classification</span>
+                    <span>Logistic Regression</span>
+                    <span>Decision Trees</span>
+                    <span>Model Evaluation</span>
+                    <span>Fraud Detection</span>
+                </div>
+
+            </section>
+
+
+            <!-- GITHUB -->
+            <div class="technical-project">
+
+                <div>
+
+                    <h2>Want to see the technical work?</h2>
+
+                    <p>
+                        The full repository includes data preparation, feature
+                        engineering, model development, model comparison,
+                        evaluation results, and project documentation.
+                    </p>
+
+                </div>
+
+
+                <a href="https://github.com/FaithKirigi/Fraud-detection-ML"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="btn">
+
+                    View on GitHub ↗
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
 
 </body>
+
 </html>
