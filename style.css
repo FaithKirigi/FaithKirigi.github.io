@@ -1481,3 +1481,38 @@ a {
     }
 
 }
+/* HERO TEST */
+
+.home-page {
+    padding: 70px 8% !important;
+}
+
+.hero-container {
+    width: 100% !important;
+    max-width: 1180px !important;
+    margin: 0 auto !important;
+
+    display: grid !important;
+    grid-template-columns: minmax(0, 650px) 300px !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    gap: 80px !important;
+}
+
+.hero-image img {
+    width: 300px !important;
+    height: 300px !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+}
+
+.hero-text h1 {
+    font-size: 54px !important;
+}
+
+.hero-description {
+    max-width: 620px !important;
+    font-size: 18px !important;
+    line-height: 1.7 !important;
+}
