@@ -521,13 +521,23 @@ a {
 }
 
 .footer-socials a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
     color: #1f3c88;
-    font-size: 22px;
+    font-size: 28px;
     text-decoration: none;
+
+    border-radius: 50%;
 }
 
 .footer-socials a:hover {
-    color: #2563eb;
+    color: #18316f;
+    background: #edf2fb;
     transform: translateY(-2px);
 }
 
