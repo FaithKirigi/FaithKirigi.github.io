@@ -162,7 +162,7 @@ a {
    ========================================================= */
 
 .home-page {
-    padding: 75px 8% 70px;
+    padding: 48px 8% 48px;
 }
 
 .hero-container {
@@ -180,7 +180,7 @@ a {
     justify-content: space-between;
     align-items: center;
 
-    gap: 100px;
+    gap: 56px;
 }
 
 
@@ -206,7 +206,7 @@ a {
 
     color: #111827;
 
-    font-size: 54px;
+    font-size: 46px;
     line-height: 1.08;
 }
 
@@ -314,7 +314,7 @@ a {
    ========================================================= */
 
 .standard-page {
-    padding: 48px 8% 65px;
+    padding: 36px 8% 50px;
 }
 
 .standard-container,
@@ -336,7 +336,7 @@ a {
 
     max-width: 900px;
 
-    margin-bottom: 32px;
+    margin-bottom: 22px;
 }
 
 .page-label {
@@ -380,7 +380,7 @@ a {
 
     max-width: 900px;
 
-    padding-top: 26px;
+    padding-top: 18px;
 
     border-top: 1px solid #dce3ed;
 }
@@ -490,7 +490,7 @@ a {
 
     padding: 28px;
 
-    background: #ffffff;
+    background: #f0f3f9;
 
     border: 1px solid #e1e7ef;
     border-top: 3px solid #1f3c88;
